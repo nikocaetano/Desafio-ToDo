@@ -7,7 +7,7 @@ export default class Main extends Component {
     state = {
         task: '',
         taskList: []
-        }
+    }
 
     handleChange = (event) => {
         this.setState({
@@ -15,8 +15,10 @@ export default class Main extends Component {
         });
     };
 
+
+    //
+
     Send = (event) => {
-        event.preventDefault();
         if (this.state.task !== "") {
             this.setState({
                 taskList: this.state.taskList.concat({
@@ -47,7 +49,7 @@ export default class Main extends Component {
 
     render() {
         return (
-            <Section>
+            <Section onSubmit={(event) => { event.preventDefault() }}>
                 <input onChange={this.handleChange} value={this.state.task} />
                 <button className="buttonGreen" onClick={this.Send}>Send</button>
                 <button className="buttonRed" onClick={() => { this.RemoveAll() }}>Clear</button>
@@ -57,7 +59,7 @@ export default class Main extends Component {
                             <ul>
                                 <li>{item.task}</li>
                             </ul>
-                            <img onClick={() => { this.Remove(item.id) }} src={imagem}/>
+                            <img onClick={() => { this.Remove(item.id) }} src={imagem} />
                         </div>
                     )}
                 </div>

@@ -6,22 +6,23 @@ padding:0;
 box-sizing:border-box;
 `
 
-document.body.style.backgroundColor = '#4f0147'
+document.body.style.backgroundColor = '#c8b6ff'
 
 export const Container = styled.div`
 border:none;
 display:flex;
 justify-content:center;
-color:white;
+color:#372A61;
 h1{
     font-size: 5vw;
+    font-family:'Rubik Iso', sans-serif;
 }
 h1:hover{
-    font-size: 6vw;
+    font-size: 5.5vw;
     cursor:pointer;
 }
 `
-export const Section = styled.section`
+export const Section = styled.form`
 
 justify-content:space-evenly;
 display:flex;
@@ -41,13 +42,13 @@ button{
 }
 
 .buttonGreen{
-    background-color:#0ead69;
+    background-color:#80ed99;
     color:white;
     height:3vw;
 }
 
 .buttonRed{
-    background-color:#d90429;
+    background-color:#f25c54;
     color:white;
     height:3vw;
 }
