@@ -6,13 +6,13 @@ padding:0;
 box-sizing:border-box;
 `
 
-document.body.style.backgroundColor = '#c8b6ff'
+document.body.style.backgroundColor = '#47126b'
 
 export const Container = styled.div`
 border:none;
 display:flex;
 justify-content:center;
-color:#372A61;
+color:white;
 h1{
     font-size: 5vw;
     font-family:'Rubik Iso', sans-serif;
